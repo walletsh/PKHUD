@@ -99,6 +99,12 @@ open class PKHUD: NSObject {
         return !container.isHidden
     }
 
+    open var effectBackgroundColor: UIColor? {
+        get { container.frameView.backgroundColor }
+        set { container.frameView.backgroundColor = newValue }
+    }
+
+
     open var contentView: UIView {
         get {
             return container.frameView.content
